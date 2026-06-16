@@ -1,0 +1,4 @@
+interface:
+  display_name: "I2P Brief"
+  short_description: "Create or refresh product briefs"
+  default_prompt: "Use $i2p-brief to create or refresh the product brief before roadmap or implementation work."

@@ -1,0 +1,24 @@
+{
+  "name": "i2p-skills",
+  "version": "0.1.0",
+  "description": "Install the i2p skill pack for Codex and Claude from a GitHub-hosted npm package.",
+  "type": "module",
+  "bin": {
+    "i2p-skills": "./bin/i2p-skills.mjs"
+  },
+  "files": [
+    "bin/",
+    "skills/codex/",
+    "skills/claude/",
+    "README.md",
+    "README.vi.md"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "install:dry-run": "node ./bin/i2p-skills.mjs install --target all --dry-run"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}

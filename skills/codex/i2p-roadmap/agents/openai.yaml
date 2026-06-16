@@ -1,0 +1,4 @@
+interface:
+  display_name: "I2P Roadmap"
+  short_description: "Create ordered product roadmaps"
+  default_prompt: "Use $i2p-roadmap to turn a brief into ordered phases and build or content units."

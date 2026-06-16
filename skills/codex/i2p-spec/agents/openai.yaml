@@ -1,0 +1,4 @@
+interface:
+  display_name: "I2P Spec"
+  short_description: "Write decision-complete unit specs"
+  default_prompt: "Use $i2p-spec to write a decision-complete unit spec before implementation or drafting."
