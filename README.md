@@ -256,8 +256,7 @@ Primary output:
 
 ### Install From GitHub With npx
 
-After this repository is published on GitHub, install the skills directly from
-the public repo:
+Install the skills directly from the public GitHub repository:
 
 ```bash
 npx github:tttam0113/i2p-skills install --target codex

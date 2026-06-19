@@ -5,9 +5,9 @@ Update this file after every meaningful implementation change. This is the activ
 ## Current Status
 
 **Phase:** Distribution  
-**Last completed:** GitHub npx installer  
+**Last completed:** GitHub npx install verification  
 **In progress:** None  
-**Next:** Push to public GitHub repository and test `npx github:tttam0113/i2p-skills install --target all`
+**Next:** Release/readiness cleanup or packaging follow-up
 
 ## Progress
 
@@ -41,6 +41,7 @@ Update this file after every meaningful implementation change. This is the activ
 ### Distribution
 
 - [x] GitHub npx installer
+- [x] GitHub npx install verified from the public repository
 
 ## Decisions Made
 
@@ -62,7 +63,7 @@ Update this file after every meaningful implementation change. This is the activ
 
 ## Notes
 
-- This repository is not currently a git repository.
+- This repository is now a git repository with `main` tracking `origin/main`.
 - `skills/codex/` now exists with all five planned skills: `i2p-brief`, `i2p-roadmap`, `i2p-spec`, `i2p-progress`, and `i2p-style`.
 - The PDF in `references/ai_development_starter_kit/lead_magnet/` was not parsed during planning because a local PDF parser was unavailable; Markdown files were used as primary source material.
 - Shared templates now exist for software profile, non-code profile, and shared unit specs.
@@ -96,3 +97,4 @@ Update this file after every meaningful implementation change. This is the activ
 - Installer supports `--target codex|claude|all`, `--dest`, `--force`, and `--dry-run`.
 - Added Node built-in tests for CLI help, dry run, copy behavior, overwrite protection, force overwrite, and invalid `--target all --dest`.
 - Updated English and Vietnamese READMEs with GitHub npx install instructions.
+- User verified installation from the public GitHub repository with the skill pack; no additional install test is needed for this checkpoint.

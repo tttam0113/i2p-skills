@@ -254,7 +254,7 @@ Output chinh:
 
 ### Cai Tu GitHub Bang npx
 
-Sau khi repo nay duoc publish public tren GitHub, co the cai truc tiep:
+Co the cai skill truc tiep tu public GitHub repository:
 
 ```bash
 npx github:tttam0113/i2p-skills install --target codex
