@@ -36,9 +36,9 @@ Do not use `i2p-*` as a replacement for implementation, debugging, verification,
 ### New Product
 
 1. Run `i2p-brief` to clarify the idea, audience, scope, constraints, and success criteria.
-2. Run `i2p-style` if the product needs UI, editorial voice, formatting, or visual consistency.
+2. Run `i2p-style` if the product needs UI, editorial voice, formatting, or visual consistency. For software without design assets, use it to create baseline UI direction before roadmap/spec work.
 3. Run `i2p-roadmap` to create ordered phases and units.
-4. Run `i2p-spec` for the first unit.
+4. Run `i2p-spec` for the first unit, including wireframe sections for UI screen units.
 5. Execute with Superpowers or another specialist skill.
 6. Run `i2p-progress` after each meaningful result.
 
@@ -53,9 +53,10 @@ Do not use `i2p-*` as a replacement for implementation, debugging, verification,
 
 1. Read the existing context.
 2. Run `i2p-brief` if the request changes scope, audience, constraints, success criteria, or vocabulary.
-3. Run `i2p-roadmap` if the work needs to be split into multiple units.
-4. Run `i2p-spec` for the next target unit.
-5. After execution, run `i2p-progress` and `i2p-style` if there are durable changes to record.
+3. Run `i2p-style` first when the new UI or layout area lacks established visual direction.
+4. Run `i2p-roadmap` if the work needs to be split into multiple units.
+5. Run `i2p-spec` for the next target unit.
+6. After execution, run `i2p-progress` and `i2p-style` if there are durable changes to record.
 
 ## Artifact Profiles
 
@@ -226,6 +227,7 @@ Use this skill to create or update a style system for UI, editorial style, produ
 Main modes:
 
 - **New product style guide:** create baseline style guidance from the brief, audience, constraints, and product type.
+- **New product UI direction:** when no design assets exist, define visual direction, navigation/layout model, component baseline, screen archetypes, and state rules that screen specs can use.
 - **Existing-product audit:** inspect existing UI/content and record patterns, deviations, and fix candidates.
 - **Post-unit imprint:** after a component, chapter, lesson, callout, checklist, layout, or repeated pattern is created, update style artifacts so the pattern can be reused.
 
@@ -250,7 +252,7 @@ Primary output:
   - `context/editorial-style.md`
   - `context/layout-guide.md`
 
-`i2p-style` does not implement UI and does not draft final content. It records style rules, patterns, vocabulary, registry entries, and audit findings.
+`i2p-style` does not implement UI, create image mockups, or draft final content. It records style rules, UI direction, wireframe-ready guidance, patterns, vocabulary, registry entries, and audit findings.
 
 ## Installation
 

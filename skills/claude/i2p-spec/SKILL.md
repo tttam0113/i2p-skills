@@ -23,6 +23,7 @@ Read relevant style context when it affects the unit:
 
 - Software: `context/ui-tokens.md`, `context/ui-rules.md`, and `context/ui-registry.md`.
 - Non-code: `context/style.md` or `context/editorial-style.md`.
+- For UI screen specs, use `/i2p-style` first if no UI direction exists and layout, hierarchy, or component patterns would otherwise be guessed.
 
 Check existing `context/specs/` files for numbering, naming conventions, dependencies, and precedent.
 
@@ -40,7 +41,7 @@ Write the spec to `context/specs/NN-unit-name.md` using the template below. Foll
 - Remove all template placeholder text (`TBD`, `TODO`, bracketed instructions) from the final file.
 - Keep `references/` read-only unless the user explicitly asks to edit source material.
 
-**Software unit guidance:** Identify the architecture boundary and affected areas. Cover data/API behavior, validation, empty/loading/error states, permissions or security rules, and test or verification expectations when relevant. Acceptance criteria should be verifiable through tests, builds, static checks, UI inspection, API calls, or documented review steps.
+**Software unit guidance:** Identify the architecture boundary and affected areas. Cover data/API behavior, validation, empty/loading/error states, permissions or security rules, and test or verification expectations when relevant. For UI screen specs, include a textual wireframe section with regions, hierarchy, primary and secondary actions, data shown, interaction states, responsive behavior, and style references. Do not create image mockups or implement UI in the spec. Acceptance criteria should be verifiable through tests, builds, static checks, UI inspection, API calls, or documented review steps.
 
 **Non-code unit guidance:** Use neutral product language (chapter, lesson, section, asset, draft, edit, review, layout, source, claim, exercise). Identify the audience outcome, core points, examples or exercises, source/citation needs, editorial constraints, formatting rules, and review expectations. Do not draft the final chapter, lesson, or section — write the spec that guides that later work.
 
@@ -111,6 +112,20 @@ Use this section only for non-code units.
 - [UI, visual, editorial, or formatting rule]
 - [Pattern to follow from style context]
 - [Consistency note]
+
+## UI Screen Wireframe
+
+Use this section only for UI screen units.
+
+- **Screen purpose:** [User goal this screen supports]
+- **Regions:** [Top bar/nav/main/side panel/footer or other regions]
+- **Hierarchy:** [Primary content order and visual emphasis]
+- **Primary actions:** [Main CTA and placement]
+- **Secondary actions:** [Supporting actions and placement]
+- **Data shown:** [Key fields, lists, metrics, forms, or content]
+- **States:** [Loading, empty, error, disabled, success, or permission states]
+- **Responsive notes:** [Mobile/tablet/desktop layout changes]
+- **Style references:** [Relevant tokens, rules, registry patterns]
 
 ## Dependencies
 

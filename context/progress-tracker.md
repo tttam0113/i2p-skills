@@ -4,10 +4,10 @@ Update this file after every meaningful implementation change. This is the activ
 
 ## Current Status
 
-**Phase:** Distribution  
-**Last completed:** GitHub Release `v0.1.0`  
+**Phase:** Post-release iteration  
+**Last completed:** UI direction and wireframe-ready spec workflow update  
 **In progress:** None  
-**Next:** Monitor usage and collect feedback; npm registry publishing is not planned for this checkpoint.
+**Next:** Dogfood the updated software flow on a real project with no existing design assets.
 
 ## Progress
 
@@ -44,6 +44,10 @@ Update this file after every meaningful implementation change. This is the activ
 - [x] GitHub npx install verified from the public repository
 - [x] Git tag and GitHub Release `v0.1.0`
 
+### Post-Release Iteration
+
+- [x] Add UI direction and wireframe-ready screen spec guidance for software products without design assets
+
 ## Decisions Made
 
 - Use `i2p-` as the required skill prefix.
@@ -58,6 +62,7 @@ Update this file after every meaningful implementation change. This is the activ
 - Distribute the skill pack from a public GitHub repo with an explicit npm-compatible CLI, not a package `postinstall` side effect.
 - Use `npx github:tttam0113/i2p-skills install --target codex|claude|all` as the primary install interface.
 - Do not publish to the npm registry for `v0.1.0`; GitHub `npx` install is sufficient for this checkpoint.
+- Do not add a sixth skill for wireframes in this iteration; `i2p-style` owns textual UI direction and `i2p-spec` owns per-screen wireframe specs.
 
 ## Open Questions
 
@@ -101,3 +106,4 @@ Update this file after every meaningful implementation change. This is the activ
 - Updated English and Vietnamese READMEs with GitHub npx install instructions.
 - User verified installation from the public GitHub repository with the skill pack; no additional install test is needed for this checkpoint.
 - Created and pushed tag `v0.1.0`, then created the GitHub Release for that tag.
+- Updated the documented workflow so new software products without design assets run `i2p-style` before roadmap/spec work, and UI screen specs include textual wireframe sections.

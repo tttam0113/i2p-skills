@@ -1,6 +1,6 @@
 ---
 name: i2p-style
-description: Create or update style systems for software UI and non-code products. Use when Codex needs to write or refresh context/ui-tokens.md, context/ui-rules.md, context/ui-registry.md, context/style.md, context/editorial-style.md, or context/layout-guide.md; audit existing visual/editorial patterns; capture product-language guidance; or imprint reusable UI/content patterns after a unit is built or drafted.
+description: Create or update style systems for software UI and non-code products. Use when Codex needs to write or refresh context/ui-tokens.md, context/ui-rules.md, context/ui-registry.md, context/style.md, context/editorial-style.md, or context/layout-guide.md; create baseline UI direction when no design assets exist; audit existing visual/editorial patterns; capture product-language guidance; or imprint reusable UI/content patterns after a unit is built or drafted.
 ---
 
 # i2p Style
@@ -12,6 +12,7 @@ Create or update style artifacts that keep future UI, content, and product langu
 1. Read existing project instructions and context first. Prefer `AGENTS.md`, `CLAUDE.md`, and files under `context/` when they exist.
 2. Choose the mode:
    - **New product style guide:** create baseline style guidance from the brief/project overview, audience, constraints, product type, and user preferences.
+   - **New product UI direction:** for software products without design assets, define visual direction, navigation/layout model, component baseline, screen archetypes, and state rules before roadmap/spec work.
    - **Existing-product audit:** inspect available docs/files/components/content and record observed patterns, deviations, and fix candidates without inventing intent.
    - **Post-unit imprint:** update reusable rules or registry entries after a UI component, chapter, lesson, section, callout, checklist, layout, or repeated pattern is created.
 3. Choose the artifact profile:
@@ -27,6 +28,8 @@ Create or update style artifacts that keep future UI, content, and product langu
 ### New Product Style Guide
 
 Create practical baseline guidance that future agents can apply directly. Prefer concrete tokens, vocabulary, examples, structural rules, and quality bars over abstract brand language.
+
+For software products with no existing design assets, also create wireframe-ready UI direction: page shell, navigation model, layout density, screen archetypes, component baseline, primary/secondary action patterns, and loading/empty/error state rules. Do not create image mockups, prototypes, or implemented UI.
 
 ### Existing-Product Audit
 
@@ -47,6 +50,8 @@ Keep software style split across:
 - `assets/templates/ui-registry.md` for `context/ui-registry.md`: reusable component and pattern entries, including components to fix.
 
 Do not implement UI or rewrite components. Identify patterns and deviations so later implementation work can use them.
+
+When no UI exists yet, make `context/ui-rules.md` and `context/ui-registry.md` concrete enough that `i2p-spec` can write per-screen wireframe specs without guessing layout regions, hierarchy, actions, states, or component patterns.
 
 ### Non-Code
 

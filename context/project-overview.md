@@ -35,10 +35,11 @@ The pack supports software products by default and also supports non-code produc
 
 1. Clarify idea, audience, scope, constraints, and success criteria.
 2. Create context files.
-3. Create a roadmap or build plan.
-4. Write the first unit spec.
-5. Hand implementation or drafting to Superpowers or another specialist skill.
-6. Update progress and style context after meaningful work.
+3. For software products with UI or content products with layout needs, create baseline style direction before roadmap/spec work.
+4. Create a roadmap or build plan.
+5. Write the first unit spec, including wireframe-ready guidance for UI screen units.
+6. Hand implementation or drafting to Superpowers or another specialist skill.
+7. Update progress and style context after meaningful work.
 
 ### Existing Product Onboarding
 
@@ -51,9 +52,10 @@ The pack supports software products by default and also supports non-code produc
 
 1. Read existing context.
 2. Confirm whether the request changes scope or architecture.
-3. Create or update roadmap units as needed.
-4. Write a unit spec.
-5. Update progress and style context after completion.
+3. Refresh style direction first when a new UI or layout area lacks established patterns.
+4. Create or update roadmap units as needed.
+5. Write a unit spec.
+6. Update progress and style context after completion.
 
 ## Artifact Profiles
 

@@ -113,6 +113,7 @@ Non-code profile output names use neutral product language:
 User idea
   -> i2p-brief
   -> context artifacts
+  -> i2p-style when UI, visual, editorial, or layout direction is needed
   -> i2p-roadmap
   -> ordered units
   -> i2p-spec
@@ -137,6 +138,7 @@ Existing files/docs
 - `context/progress-tracker.md` is this repo's active project memory.
 - Skills must be concise and use progressive disclosure.
 - `i2p-*` must not duplicate Superpowers execution, debugging, verification, or review workflows.
+- `i2p-style` may create textual UI direction and wireframe-ready guidance, but actual UI drafts, mockups, prototypes, and implementation remain execution work.
 - Software artifact names default to the starter-kit naming profile.
 - Non-code artifacts may use neutral names when generated for external products.
 - No secrets or credential-like values may be persisted in generated progress or memory artifacts.

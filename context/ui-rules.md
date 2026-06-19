@@ -9,6 +9,8 @@ For software products, `i2p-style` should support:
 - Design tokens.
 - UI rules.
 - UI registry.
+- New-product UI direction when no design assets exist.
+- Wireframe-ready screen archetypes for later `i2p-spec` screen specs.
 - Component pattern capture.
 - Existing UI audits.
 
@@ -38,3 +40,5 @@ Default non-code outputs:
 ## Rule
 
 Do not use this repo's `ui-*` files as an app design system. Use them as active context for designing the `i2p-style` skill.
+
+`i2p-style` may define textual UI direction, screen archetypes, and layout rules. It must not implement UI, create visual mockup files, or replace frontend execution workflows.

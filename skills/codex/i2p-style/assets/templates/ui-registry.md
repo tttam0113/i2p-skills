@@ -6,6 +6,8 @@ Living registry of reusable UI patterns. Update after building or auditing compo
 
 | Property | Correct Pattern |
 | --- | --- |
+| App shell/navigation | [Pattern] |
+| Page header | [Pattern] |
 | Card background | [Token/class] |
 | Card border | [Token/class] |
 | Card radius | [Token/class] |
@@ -14,6 +16,17 @@ Living registry of reusable UI patterns. Update after building or auditing compo
 | Input | [Token/class pattern] |
 | Primary text | [Token/class] |
 | Muted text | [Token/class] |
+
+## Screen Patterns
+
+### [Screen Archetype]
+
+Use for: [Dashboard/list/detail/form/settings/onboarding/etc.]
+
+- **Regions:** [Expected regions]
+- **Hierarchy:** [Primary content and action order]
+- **States:** [Required loading/empty/error/success states]
+- **Responsive behavior:** [Expected layout changes]
 
 ## Components
 

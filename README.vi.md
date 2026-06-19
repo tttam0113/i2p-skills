@@ -34,9 +34,9 @@ Khong dung `i2p-*` de thay the workflow implementation, debugging, verification,
 ### San Pham Moi
 
 1. Chay `i2p-brief` de lam ro y tuong, doi tuong, scope, constraints, success criteria.
-2. Chay `i2p-style` neu san pham can UI, editorial voice, format, hoac visual consistency.
+2. Chay `i2p-style` neu san pham can UI, editorial voice, format, hoac visual consistency. Voi software chua co design assets, dung buoc nay de tao baseline UI direction truoc roadmap/spec.
 3. Chay `i2p-roadmap` de tao cac phase va unit co thu tu.
-4. Chay `i2p-spec` cho unit dau tien.
+4. Chay `i2p-spec` cho unit dau tien, gom wireframe sections cho UI screen units.
 5. Thuc thi bang Superpowers hoac skill chuyen dung.
 6. Chay `i2p-progress` sau moi ket qua co y nghia.
 
@@ -51,9 +51,10 @@ Khong dung `i2p-*` de thay the workflow implementation, debugging, verification,
 
 1. Doc context hien co.
 2. Chay `i2p-brief` neu request thay doi scope, audience, constraints, success criteria, hoac vocabulary.
-3. Chay `i2p-roadmap` neu cong viec can tach thanh nhieu unit.
-4. Chay `i2p-spec` cho unit tiep theo.
-5. Sau khi thuc thi, chay `i2p-progress` va `i2p-style` neu co thay doi dang ghi nho.
+3. Chay `i2p-style` truoc khi UI hoac layout area moi chua co visual direction ro rang.
+4. Chay `i2p-roadmap` neu cong viec can tach thanh nhieu unit.
+5. Chay `i2p-spec` cho unit tiep theo.
+6. Sau khi thuc thi, chay `i2p-progress` va `i2p-style` neu co thay doi dang ghi nho.
 
 ## Artifact Profiles
 
@@ -224,6 +225,7 @@ Dung khi can tao hoac cap nhat style system cho UI, editorial style, product lan
 Che do chinh:
 
 - **New product style guide:** tao style baseline tu brief, audience, constraints, product type.
+- **New product UI direction:** khi chua co design assets, dinh nghia visual direction, navigation/layout model, component baseline, screen archetypes, va state rules de screen specs co the dung.
 - **Existing-product audit:** doc UI/content hien co va ghi lai patterns, deviations, fix candidates.
 - **Post-unit imprint:** sau khi co component, chapter, lesson, callout, checklist, layout, hoac pattern moi, cap nhat style artifact de dung lai.
 
@@ -248,7 +250,7 @@ Output chinh:
   - `context/editorial-style.md`
   - `context/layout-guide.md`
 
-`i2p-style` khong implement UI va khong draft final content. No chi ghi lai style rules, patterns, vocabulary, registry entries, hoac audit findings.
+`i2p-style` khong implement UI, khong tao image mockups, va khong draft final content. No ghi lai style rules, UI direction, wireframe-ready guidance, patterns, vocabulary, registry entries, hoac audit findings.
 
 ## Cai Dat
 

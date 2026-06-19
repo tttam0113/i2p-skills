@@ -1,4 +1,4 @@
 interface:
   display_name: "I2P Style"
-  short_description: "Create product style systems"
-  default_prompt: "Use $i2p-style to create or update style guidance for a software or non-code product."
+  short_description: "Create product style and UI direction"
+  default_prompt: "Use $i2p-style to create or update style guidance, UI direction, or reusable patterns for a software or non-code product."

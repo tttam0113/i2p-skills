@@ -1,6 +1,6 @@
 ---
 name: i2p-style
-description: Create or update style systems for software UI and non-code products. Use when writing or refreshing context/ui-tokens.md, context/ui-rules.md, context/ui-registry.md, context/style.md, context/editorial-style.md, or context/layout-guide.md; auditing existing visual or editorial patterns; capturing product-language guidance; or imprinting reusable UI or content patterns after a unit is built or drafted.
+description: Create or update style systems for software UI and non-code products. Use when writing or refreshing context/ui-tokens.md, context/ui-rules.md, context/ui-registry.md, context/style.md, context/editorial-style.md, or context/layout-guide.md; creating baseline UI direction when no design assets exist; auditing existing visual or editorial patterns; capturing product-language guidance; or imprinting reusable UI or content patterns after a unit is built or drafted.
 ---
 
 Create or update style artifacts that keep future UI, content, and product language consistent. Keep this skill focused on style systems: do not implement UI, draft final content, execute plans, debug, verify code, or perform review workflows.
@@ -12,6 +12,7 @@ Read `AGENTS.md`, `CLAUDE.md`, and files under `context/` when they exist. Read 
 ## Step 2 — Choose the Mode
 
 - **New product style guide** — create baseline style guidance from the brief/project overview, audience, constraints, product type, and user preferences. Prefer concrete tokens, vocabulary, examples, structural rules, and quality bars over abstract brand language.
+- **New product UI direction** — for software products without design assets, define visual direction, navigation/layout model, component baseline, screen archetypes, and state rules before roadmap/spec work. Do not create image mockups, prototypes, or implemented UI.
 - **Existing-product audit** — inspect available docs, files, components, or content samples. Record observed patterns as current style, and record deviations or inconsistencies as fix candidates. Do not rewrite product code or content as part of the audit.
 - **Post-unit imprint** — capture reusable patterns created during a completed unit. For software, update tokens, UI rules, or registry entries. For non-code products, update voice, vocabulary, section, callout, checklist, citation, or layout rules.
 
@@ -22,8 +23,8 @@ If you are unsure which mode applies, ask one question to resolve it.
 **Software** — write or refresh one or more of:
 
 - `context/ui-tokens.md` — visual tokens: color, typography, spacing, radius, borders, invariants.
-- `context/ui-rules.md` — build rules for layout, components, typography, states, icons, media, prohibited patterns.
-- `context/ui-registry.md` — reusable component and pattern entries, including components to fix.
+- `context/ui-rules.md` — build rules for layout, screen archetypes, components, typography, states, icons, media, prohibited patterns.
+- `context/ui-registry.md` — reusable component and pattern entries, screen patterns, including components to fix.
 
 **Non-code** — write or refresh one or more of:
 
@@ -43,6 +44,7 @@ Write the artifacts using the templates for the chosen profile (see **Templates*
 
 - Write concrete guidance. Do not leave `TBD`, `TODO`, or bracketed placeholder text in the final files.
 - Do not implement UI or rewrite components. Identify patterns and deviations so later implementation work can use them.
+- When no UI exists yet, make the software style artifacts concrete enough that `/i2p-spec` can write per-screen wireframe specs without guessing layout regions, hierarchy, actions, states, or component patterns.
 - Do not draft final chapters, lessons, sections, or marketing copy. Style artifacts guide later drafting and review.
 
 ## Step 6 — Update Progress
@@ -118,6 +120,17 @@ Concise rules for building UI in this project. Read this before creating or modi
 - [Page width, spacing, navigation, or shell rule]
 - [Responsive behavior rule]
 
+## UI Direction
+
+- [Visual direction and density rule]
+- [Navigation model rule]
+- [Primary/secondary action placement rule]
+
+## Screen Archetypes
+
+- [Dashboard, list/detail, form, settings, onboarding, or other screen pattern]
+- [Rule for screen region order and hierarchy]
+
 ## Components
 
 - [Card/panel rule]
@@ -160,6 +173,8 @@ Living registry of reusable UI patterns. Update after building or auditing compo
 
 | Property | Correct Pattern |
 | --- | --- |
+| App shell/navigation | [Pattern] |
+| Page header | [Pattern] |
 | Card background | [Token/class] |
 | Card border | [Token/class] |
 | Card radius | [Token/class] |
@@ -168,6 +183,17 @@ Living registry of reusable UI patterns. Update after building or auditing compo
 | Input | [Token/class pattern] |
 | Primary text | [Token/class] |
 | Muted text | [Token/class] |
+
+## Screen Patterns
+
+### [Screen Archetype]
+
+Use for: [Dashboard/list/detail/form/settings/onboarding/etc.]
+
+- **Regions:** [Expected regions]
+- **Hierarchy:** [Primary content and action order]
+- **States:** [Required loading/empty/error/success states]
+- **Responsive behavior:** [Expected layout changes]
 
 ## Components
 

@@ -55,6 +55,20 @@ Use this section only for non-code units.
 - [Pattern to follow from style context]
 - [Consistency note]
 
+## UI Screen Wireframe
+
+Use this section only for UI screen units.
+
+- **Screen purpose:** [User goal this screen supports]
+- **Regions:** [Top bar/nav/main/side panel/footer or other regions]
+- **Hierarchy:** [Primary content order and visual emphasis]
+- **Primary actions:** [Main CTA and placement]
+- **Secondary actions:** [Supporting actions and placement]
+- **Data shown:** [Key fields, lists, metrics, forms, or content]
+- **States:** [Loading, empty, error, disabled, success, or permission states]
+- **Responsive notes:** [Mobile/tablet/desktop layout changes]
+- **Style references:** [Relevant tokens, rules, registry patterns]
+
 ## Dependencies
 
 - [Existing unit, file, source, package, or decision needed first]

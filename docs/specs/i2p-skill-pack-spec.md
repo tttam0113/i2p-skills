@@ -127,6 +127,7 @@ Creates and maintains style consistency for visual, editorial, and product-langu
 Modes:
 
 - New product style guide.
+- New product UI direction when a software product has no existing design baseline.
 - Existing product style audit.
 - Post-unit imprint after a UI component, chapter, lesson, or repeated pattern is created.
 
@@ -142,7 +143,8 @@ Source influences:
 
 For software products, capture:
 
-- Tokens, typography, colors, spacing, borders, component patterns, interaction states, and registry entries.
+- Tokens, typography, colors, spacing, borders, navigation/layout direction, screen archetypes, component patterns, interaction states, and registry entries.
+- When no design assets exist, create textual UI direction that `i2p-spec` can turn into per-screen wireframe specs. Do not create image files, mockups, prototypes, or implemented UI inside `i2p-style`.
 
 For content products, capture:
 
@@ -195,9 +197,9 @@ Root entrypoints:
 ### New Product
 
 1. Run `i2p-brief` to clarify the idea and create the brief.
-2. Run `i2p-style` if visual/editorial style matters.
+2. Run `i2p-style` if visual/editorial style matters. For software without design assets, use it to create baseline UI direction before roadmap/spec work.
 3. Run `i2p-roadmap` to create ordered units.
-4. Run `i2p-spec` for the first unit.
+4. Run `i2p-spec` for the first unit, including wireframe sections for UI screen units.
 5. Hand off implementation or drafting to Superpowers or another specialist skill.
 6. Run `i2p-progress` after each meaningful result.
 
@@ -212,10 +214,11 @@ Root entrypoints:
 
 1. Read current context.
 2. Run `i2p-brief` only if the request changes product scope, audience, constraints, or terms.
-3. Run `i2p-roadmap` for feature-level decomposition if the work spans multiple units.
-4. Run `i2p-spec` for the next unit.
-5. Hand off implementation or drafting.
-6. Run `i2p-progress` and `i2p-style` as needed after completion.
+3. Run `i2p-style` first when the new UI or layout area lacks established visual direction.
+4. Run `i2p-roadmap` for feature-level decomposition if the work spans multiple units.
+5. Run `i2p-spec` for the next unit.
+6. Hand off implementation or drafting.
+7. Run `i2p-progress` and `i2p-style` as needed after completion.
 
 ## Repository Layout
 

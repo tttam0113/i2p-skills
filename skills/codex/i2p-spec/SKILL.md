@@ -20,6 +20,7 @@ Turn one roadmap or build-plan unit into a decision-complete spec. Keep this ski
 4. Read relevant style context when it affects the unit:
    - Software: `context/ui-tokens.md`, `context/ui-rules.md`, and `context/ui-registry.md`.
    - Non-code: `context/style.md` or `context/editorial-style.md`.
+   - For UI screen specs, use `i2p-style` first if no UI direction exists and layout, hierarchy, or component patterns would otherwise be guessed.
 5. Check existing `context/specs/` files for numbering, naming, dependencies, and precedent.
 6. Ask concise questions before writing if a missing decision would make scope, behavior, acceptance criteria, or style ambiguous. If the gap can be safely bounded, record it as an explicit assumption.
 7. Write the spec to `context/specs/NN-unit-name.md` using `assets/templates/unit-spec.md` as structure.
@@ -38,6 +39,8 @@ Turn one roadmap or build-plan unit into a decision-complete spec. Keep this ski
 ## Software Unit Guidance
 
 For software specs, identify the architecture boundary and affected areas when known. Cover data/API behavior, validation, empty/loading/error states, permissions or security rules, and test or verification expectations when relevant.
+
+For UI screen specs, include a textual wireframe section with regions, hierarchy, primary and secondary actions, data shown, interaction states, responsive behavior, and style references. Do not create image mockups or implement UI in the spec.
 
 Acceptance criteria should be verifiable through tests, builds, static checks, UI inspection, API calls, or documented review steps. Hand off implementation, debugging, verification, or code review to Superpowers or another specialist workflow after the spec is written.
 

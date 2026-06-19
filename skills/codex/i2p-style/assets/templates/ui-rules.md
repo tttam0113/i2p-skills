@@ -7,6 +7,17 @@ Concise rules for building UI in this project. Read this before creating or modi
 - [Page width, spacing, navigation, or shell rule]
 - [Responsive behavior rule]
 
+## UI Direction
+
+- [Visual direction and density rule]
+- [Navigation model rule]
+- [Primary/secondary action placement rule]
+
+## Screen Archetypes
+
+- [Dashboard, list/detail, form, settings, onboarding, or other screen pattern]
+- [Rule for screen region order and hierarchy]
+
 ## Components
 
 - [Card/panel rule]
