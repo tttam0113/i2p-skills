@@ -56,6 +56,18 @@ Khong dung `i2p-*` de thay the workflow implementation, debugging, verification,
 5. Chay `i2p-spec` cho unit tiep theo.
 6. Sau khi thuc thi, chay `i2p-progress` va `i2p-style` neu co thay doi dang ghi nho.
 
+### San Pham Software Chua Co Design Assets
+
+Dung flow nay khi user co y tuong software nhung chua co visual design, wireframes, hoac screenshots:
+
+```text
+i2p-brief -> i2p-style -> i2p-roadmap -> i2p-spec -> execution
+```
+
+`i2p-style` tao textual UI direction: visual feel, navigation model, layout density, screen archetypes, component baseline, va state rules. Sau do `i2p-spec` bien direction nay thanh per-screen wireframe specs gom regions, hierarchy, actions, data shown, states, va responsive notes.
+
+UI drafts, image mockups, prototypes, va implementation nen duoc giao cho execution hoac frontend workflow sau khi spec da ro.
+
 ## Artifact Profiles
 
 ### Software Profile
@@ -186,6 +198,8 @@ context/specs/NN-unit-name.md
 
 `i2p-spec` khong implement code va khong draft final content. No chi tao spec du ro de agent thuc thi khong phai doan scope, acceptance criteria, dependencies, hoac style constraints.
 
+Voi UI screen units, `i2p-spec` nen co textual wireframe section: screen purpose, regions, hierarchy, primary/secondary actions, data shown, states, responsive notes, va style references.
+
 ### `i2p-progress`
 
 Dung sau moi thay doi co y nghia de giu project memory dung va gon.
@@ -289,6 +303,36 @@ npx github:tttam0113/i2p-skills install --target codex --dest /custom/skills/pat
 
 Sau khi cai xong, restart Codex hoac Claude de tool discover skills moi.
 
+### Cap Nhat Ban Da Cai
+
+Neu `i2p-*` skills da duoc cai, chay lai installer voi `--force` de ghi de cac skill folders hien co.
+
+Xem truoc update ma chua ghi file:
+
+```bash
+npx github:tttam0113/i2p-skills install --target all --dry-run
+```
+
+Cap nhat rieng Codex:
+
+```bash
+npx github:tttam0113/i2p-skills install --target codex --force
+```
+
+Cap nhat rieng Claude:
+
+```bash
+npx github:tttam0113/i2p-skills install --target claude --force
+```
+
+Cap nhat ca Codex va Claude:
+
+```bash
+npx github:tttam0113/i2p-skills install --target all --force
+```
+
+Sau khi update, restart Codex hoac Claude de load skill instructions moi nhat.
+
 ### Cai Thu Cong
 
 Codex skills nam tai:
@@ -318,7 +362,7 @@ Use i2p-brief to create a product brief for ...
 Use i2p-roadmap to build the roadmap from the current brief.
 Use i2p-spec for the next roadmap unit.
 Use i2p-progress to update project memory.
-Use i2p-style to capture the UI and editorial style rules.
+Use i2p-style to capture UI direction and editorial style rules.
 ```
 
 Claude skills nam tai:

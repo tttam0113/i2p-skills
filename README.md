@@ -58,6 +58,18 @@ Do not use `i2p-*` as a replacement for implementation, debugging, verification,
 5. Run `i2p-spec` for the next target unit.
 6. After execution, run `i2p-progress` and `i2p-style` if there are durable changes to record.
 
+### Software Product With No Design Assets
+
+Use this flow when the user has a software idea but no existing visual design, wireframes, or screenshots:
+
+```text
+i2p-brief -> i2p-style -> i2p-roadmap -> i2p-spec -> execution
+```
+
+`i2p-style` creates textual UI direction: visual feel, navigation model, layout density, screen archetypes, component baseline, and state rules. `i2p-spec` then turns that direction into per-screen wireframe specs with regions, hierarchy, actions, data shown, states, and responsive notes.
+
+Actual UI drafts, image mockups, prototypes, and implementation should be handled by an execution or frontend workflow after the spec is clear.
+
 ## Artifact Profiles
 
 ### Software Profile
@@ -188,6 +200,8 @@ context/specs/NN-unit-name.md
 
 `i2p-spec` does not implement code and does not draft final content. It creates a spec clear enough that a later execution agent does not need to guess scope, acceptance criteria, dependencies, or style constraints.
 
+For UI screen units, `i2p-spec` should include a textual wireframe section: screen purpose, regions, hierarchy, primary and secondary actions, data shown, states, responsive notes, and style references.
+
 ### `i2p-progress`
 
 Use this skill after meaningful work to keep project memory accurate and concise.
@@ -291,6 +305,36 @@ npx github:tttam0113/i2p-skills install --target codex --dest /custom/skills/pat
 
 Restart Codex or Claude after install so the new skills are discovered.
 
+### Update Existing Install
+
+If the `i2p-*` skills are already installed, run the installer again with `--force` to overwrite the existing skill folders.
+
+Preview the update without writing files:
+
+```bash
+npx github:tttam0113/i2p-skills install --target all --dry-run
+```
+
+Update Codex only:
+
+```bash
+npx github:tttam0113/i2p-skills install --target codex --force
+```
+
+Update Claude only:
+
+```bash
+npx github:tttam0113/i2p-skills install --target claude --force
+```
+
+Update both Codex and Claude:
+
+```bash
+npx github:tttam0113/i2p-skills install --target all --force
+```
+
+Restart Codex or Claude after updating so the latest skill instructions are loaded.
+
 ### Manual Install
 
 Codex skills are located at:
@@ -320,7 +364,7 @@ Use i2p-brief to create a product brief for ...
 Use i2p-roadmap to build the roadmap from the current brief.
 Use i2p-spec for the next roadmap unit.
 Use i2p-progress to update project memory.
-Use i2p-style to capture the UI and editorial style rules.
+Use i2p-style to capture UI direction and editorial style rules.
 ```
 
 Claude skills are located at:
