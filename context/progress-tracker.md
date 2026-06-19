@@ -5,9 +5,9 @@ Update this file after every meaningful implementation change. This is the activ
 ## Current Status
 
 **Phase:** Distribution  
-**Last completed:** GitHub npx install verification  
+**Last completed:** GitHub Release `v0.1.0`  
 **In progress:** None  
-**Next:** Release/readiness cleanup or packaging follow-up
+**Next:** Monitor usage and collect feedback; npm registry publishing is not planned for this checkpoint.
 
 ## Progress
 
@@ -42,6 +42,7 @@ Update this file after every meaningful implementation change. This is the activ
 
 - [x] GitHub npx installer
 - [x] GitHub npx install verified from the public repository
+- [x] Git tag and GitHub Release `v0.1.0`
 
 ## Decisions Made
 
@@ -56,6 +57,7 @@ Update this file after every meaningful implementation change. This is the activ
 - Group Codex-facing skill folders under `skills/codex/`.
 - Distribute the skill pack from a public GitHub repo with an explicit npm-compatible CLI, not a package `postinstall` side effect.
 - Use `npx github:tttam0113/i2p-skills install --target codex|claude|all` as the primary install interface.
+- Do not publish to the npm registry for `v0.1.0`; GitHub `npx` install is sufficient for this checkpoint.
 
 ## Open Questions
 
@@ -98,3 +100,4 @@ Update this file after every meaningful implementation change. This is the activ
 - Added Node built-in tests for CLI help, dry run, copy behavior, overwrite protection, force overwrite, and invalid `--target all --dest`.
 - Updated English and Vietnamese READMEs with GitHub npx install instructions.
 - User verified installation from the public GitHub repository with the skill pack; no additional install test is needed for this checkpoint.
+- Created and pushed tag `v0.1.0`, then created the GitHub Release for that tag.
